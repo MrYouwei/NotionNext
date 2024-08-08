@@ -19,10 +19,10 @@ const SideBar = (props) => {
             <div className="h-52 w-full flex justify-center">
                 <div>
                     <div onClick={() => { router.push('/') }}
-                        style={{ 'font-size':'1.075rem','line-height': '4.25rem'}}
+                        style=" font-size:1.075rem;line-height: 4.25rem"
                         className='justify-center items-center flex hover:rotate-45 py-6 hover:scale-105 dark:text-gray-100  transform duration-200 cursor-pointer'>
                         {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <LazyImage src={siteInfo?.icon} className='rounded-full' width={80} alt={siteConfig('AUTHOR')} />
+                        <LazyImage src={siteInfo?.icon} className='rounded-full' width={80} alt={siteConfig('AUTHOR')}   style=" width:70px; filter: blur(0);margin-top:-1rem;margin-right: 1.5rem"/>
                     </div>
                     <MenuGroupCard {...props} />
                 </div>
