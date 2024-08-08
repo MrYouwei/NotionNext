@@ -29,13 +29,13 @@ export function InfoCard(props) {
         {/* 问候语 */}
         <GreetingsWords />
         <div
-          className={`${isSlugPage ? 'absolute right-0 -mt-8 -mr-6 hover:opacity-0 hover:scale-150 blur' : 'cursor-pointer'} justify-center items-center flex dark:text-gray-100 transform transitaion-all duration-200`}>
+          className={`${isSlugPage ? 'absolute right-0 -mt-4 mr-6 hover:opacity-0 hover:scale-150 blur' : 'cursor-pointer'} justify-center items-center flex dark:text-gray-100 transform transitaion-all duration-200`}>
           <LazyImage
             src={siteInfo?.icon}
             className='rounded-full'
-            width={isSlugPage ? 100 : 28}
+            width={isSlugPage ? 80 : 28}
             alt={siteConfig('AUTHOR')}
-            //  style={{width:'70px', filter: blur(0),marginTop:'-1rem',marginRight: '1.5rem'}}
+            style={{width:'70px', filter: 'blur(0px)'}}
           />
         </div>
       </div>
