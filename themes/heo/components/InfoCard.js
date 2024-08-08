@@ -29,8 +29,7 @@ export function InfoCard(props) {
         {/* 问候语 */}
         <GreetingsWords />
         <div
-          className={`${isSlugPage ? 'absolute right-0 -mt-4 mr-6 hover:opacity-0 hover:scale-150 blur' : 'cursor-pointer'} justify-center items-center flex dark:text-gray-100 transform transitaion-all duration-200`}>
-          {/*style={{filter: 'blur(0px)'}}*/}
+          className={`${isSlugPage ? 'absolute right-0 -mt-4 mr-6 hover:opacity-0 hover:scale-150' : 'cursor-pointer'} justify-center items-center flex dark:text-gray-100 transform transitaion-all duration-200`}>
           <LazyImage
             src={siteInfo?.icon}
             className='rounded-full'
@@ -114,7 +113,7 @@ function GreetingsWords() {
   return (
     <div
       onClick={handleChangeGreeting}
-      className=' select-none cursor-pointer py-1 px-2 bg-indigo-400 hover:bg-indigo-50  hover:text-indigo-950 dark:bg-yellow-500 dark:hover:text-white dark:hover:bg-black text-sm rounded-lg  duration-200 transition-colors'>
+      className=' select-none cursor-pointer py-5 px-2 bg-indigo-400 hover:bg-indigo-50  hover:text-indigo-950 dark:bg-yellow-500 dark:hover:text-white dark:hover:bg-black text-sm rounded-lg  duration-200 transition-colors'>
       {greeting}
     </div>
   )
