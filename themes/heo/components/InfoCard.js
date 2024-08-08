@@ -35,7 +35,7 @@ export function InfoCard(props) {
             className='rounded-full'
             width={isSlugPage ? 100 : 28}
             alt={siteConfig('AUTHOR')}
-             style={{width:'70px', filter: blur(0),marginTop:'-1rem',marginRight: '1.5rem'}}
+            //  style={{width:'70px', filter: blur(0),marginTop:'-1rem',marginRight: '1.5rem'}}
           />
         </div>
       </div>
