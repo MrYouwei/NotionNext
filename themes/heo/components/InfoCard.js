@@ -33,7 +33,7 @@ export function InfoCard(props) {
           <LazyImage
             src={siteInfo?.icon}
             className='rounded-full'
-            width={isSlugPage ? 80 : 28}
+            width={isSlugPage ? 80 : 70}
             alt={siteConfig('AUTHOR')}
           />
         </div>
